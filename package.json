@@ -1,22 +1,22 @@
 {
   "name": "character-sheet-app",
   "version": "4.5.5",
-  "description": "Online character sheet for Tabletop Role-Playing Games",
+  "description": "Online character sheet for alternative Tabletop Role-Playing Games",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/derikb/character-sheet-app.git"
+    "url": "git+https://github.com/Ignacivs/altgames-character-sheet-app"
   },
   "bugs": {
     "url": "https://github.com/derikb/character-sheet-app/issues"
   },
-  "homepage": "https://github.com/derikb/character-sheet-app#readme",
+  "homepage": "https://github.com/Ignacivs/altgames-character-sheet-app#readme",
   "keywords": [
     "d&d",
     "rpg",
     "ttrpg",
     "character sheet"
   ],
-  "author": "Derik A Badman",
+  "author": "Derik A Badman / Ognjen S Todorovic",
   "license": "GPL-3.0",
   "dependencies": {
     "firebase": "^12.6.0",

@@ -5,6 +5,7 @@
 import Character from '../models/Character.js';
 import Character5e from '../models/Character5e.js';
 import CharacterVagabonds from '../models/CharacterVagabonds.js';
+import CharacterRaskovnik from '../models/CharacterRaskovnik.js';
 import Storage from './Storage.js';
 import Database from './Database.js';
 import { isAuthed } from './AuthService.js';
@@ -66,7 +67,8 @@ const generateCharacterKey = function () {
 const getGameOptions = function () {
     return [
         'Character5e',
-        'CharacterVagabonds'
+        'CharacterVagabonds',
+        'CharacterRaskovnik'
     ];
 };
 
@@ -86,6 +88,8 @@ const characterFactory = function (type, obj) {
             return new Character5e(obj);
         case 'CharacterVagabonds':
             return new CharacterVagabonds(obj);
+        case 'CharacterRaskovnik':
+            return new CharacterRaskovnik(obj);
         default:
             return new Character(obj);
     }
