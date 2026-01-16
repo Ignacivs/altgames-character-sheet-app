@@ -1,4 +1,4 @@
-import CharacterVagabonds from '../models/CharacterVagabonds.js';
+import CharacterVagabonds from '../models/CharacterRaskovnik.js';
 import SheetView from './SheetView';
 
 const template = document.createElement('template');
@@ -174,8 +174,8 @@ class CharacterRaskovnikSheet extends SheetView {
     }
 }
 
-if (!window.customElements.get('sheet-view-vagabonds')) {
-    window.customElements.define('sheet-view-vagabonds', CharacterVagabondsSheet);
+if (!window.customElements.get('sheet-view-raskovnik')) {
+    window.customElements.define('sheet-view-raskovnik', CharacterRaskovnikSheet);
 }
 
 export default RaskovnikSheet;
