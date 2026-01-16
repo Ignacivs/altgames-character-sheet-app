@@ -2,8 +2,7 @@
  * Model for Raskovnik, by Ognjen Todorovic
  */
 import Character from './Character.js';
-
-export default class CharacterVagabonds extends Character {
+export default class CharacterRaskovnik extends Character {
     /**
       * @prop {String} key Unique (in one instance of the app) id for the character. 7 Random letters/numbers.
       * @prop {String} charname Name.
@@ -105,12 +104,12 @@ export default class CharacterVagabonds extends Character {
      * Class name (for JSON (de)serialization). Override in children.
      */
     get className () {
-        return 'CharacterVagabonds';
+        return 'CharacterRaskovnik';
     }
     /**
      * Ruleset name. Override in children.
      */
     get ruleset () {
-        return 'Vagabonds';
+        return 'Raskovnik';
     }
 };

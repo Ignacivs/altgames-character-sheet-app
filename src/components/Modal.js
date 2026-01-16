@@ -178,8 +178,7 @@ class Modal extends HTMLElement {
                 focusables.push(child);
                 if (single) {
                     return focusables;
-                }
-            }
+                } }
             const childFocusables = this.getFocusableChildren(child, keyboardOnly, single);
             if (single && childFocusables.length === 1) {
                 return childFocusables;

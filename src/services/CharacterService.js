@@ -13,6 +13,7 @@ import Character5eSheet from '../views/Character5eSheet.js';
 import CharacterVagabondsSheet from '../views/CharacterVagabondsSheet.js';
 import SheetView from '../views/SheetView.js';
 import { version } from '../../package.json';
+import CharacterRaskovnikSheet from '../views/CharacterRaskovnikSheet.js';
 
 /**
  * Compare character version against another version.
@@ -68,7 +69,7 @@ const getGameOptions = function () {
     return [
         'Character5e',
         'CharacterVagabonds',
-        'CharacterRaskovnik'
+        'Raskovnik'
     ];
 };
 
@@ -88,7 +89,7 @@ const characterFactory = function (type, obj) {
             return new Character5e(obj);
         case 'CharacterVagabonds':
             return new CharacterVagabonds(obj);
-        case 'CharacterRaskovnik':
+        case 'Raskovnik':
             return new CharacterRaskovnik(obj);
         default:
             return new Character(obj);
@@ -301,7 +302,10 @@ const getSheetView = function (character, emitter) {
             view = new Character5eSheet({ emitter });
             break;
         case 'CharacterVagabonds':
-            view = new CharacterVagabondsSheet({ emitter });
+            view = new CharacterRaskovnikSheet({ emitter });
+            break;
+        case 'Raskovnik',
+            view = new CharacterRaskovnikSheet({ emitter }):
             break;
         default:
             view = new SheetView({ emitter });
